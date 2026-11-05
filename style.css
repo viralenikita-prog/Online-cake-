@@ -1,0 +1,416 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #333;
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+    background:lightpink;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background:white;
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background:#8e2455;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background:lightpink;
+}
+
+#error {
+    color: red;
+    margin-top: 15px;
+}
+
+/* HEADER */
+
+.header {
+    background: #8e2455;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    background-image: url("logo-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo span {
+    color: #ffd6e7;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 450px;
+    background-image: url("Images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 15px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: lightpink;
+    margin-bottom: 15px;
+}
+
+.hero h2, .hero p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8e2455;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* CATEGORY MENU */
+
+.category-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+.category-menu a {
+    width: 130px;
+    text-align: center;
+    color: #8e2455;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-menu img {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto auto 8px;
+}
+.category-section
+{
+  background-color:lightpink;
+}
+
+/* ABOUT AND CAKES */
+
+.about, .cakes, .order-section {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+.about{
+  background-color:lightpink;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+.cakes h2, .about h2, .order-section h2 {
+    color: #8e2455;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+}
+
+.category-section {
+    padding: 25px 0;
+}
+
+.category-section h3 {
+    color: #8e2455;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 230px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h4 {
+    margin: 12px 0;
+}
+
+.card p {
+    color: #8e2455;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card button, .submit-btn {
+    background: #8e2455;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card button:hover, .submit-btn:hover {
+    background: #bd477d;
+}
+
+/* ORDER FORM */
+
+.order-section {
+    background: #fff0f5;
+}
+
+.order-section form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.order-section label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+.order-section input:not([type="radio"]),
+.order-section select,
+.order-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.order-section textarea {
+    min-height: 80px;
+}
+
+.payment-option {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.payment-note {
+    color: #777;
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#orderResult {
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+    background: #8e2455;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .category-menu a {
+        width: 100px;
+    }
+}
+/* CONTACT SECTION */
+
+.contact {
+    background: #fff0f5;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact h1 {
+    color: #e91e63;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    color: #ad1457;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #444;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 12px;
+    background: white;
+    border-radius: 10px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contact p:hover {
+    background: #f8bbd0;
+    transform: scale(1.03);
+}

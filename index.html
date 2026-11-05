@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nikis Sweet Cake Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="logo">
+    <img src="Images/logo.jpg" alt="Nikis Cake Logo">
+    <span>Nikis Sweet Cake Shop</span>
+</div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Nikis Sweet Cake Shop</h1>
+
+        <h2>Welcome To Our Cake Shop</h2>
+
+        <p>Delicious Cakes For Every Celebration!</p>
+
+        <p>Make Your Special Moments More Sweet With Our Cakes.</p>
+
+        <a href="#cakes" class="btn">Explore Cakes</a>
+
+        <a href="#order" class="btn">Order Now</a>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORY PHOTO MENU -->
+
+<section class="category-menu">
+
+    <a href="#birthday">
+        <img src="Images/birthday main.jpg" alt="Birthday Cake">
+        <span>Birthday Cake</span>
+    </a>
+
+    <a href="#anniversary">
+        <img src="Images/aniversary main.jpg" alt="Anniversary Cake">
+        <span>Anniversary Cake</span>
+    </a>
+
+    <a href="#wedding">
+        <img src="Images/wedding main.jpg" alt="Wedding Cake">
+        <span>Wedding Cake</span>
+    </a>
+
+
+    <a href="#redVelvet">
+        <img src="Images/redvelvet main.jpg" alt="Red Velvet Cake">
+        <span>Red Velvet</span>
+    </a>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+
+    <h2>About Our Cake Shop</h2>
+
+    <p>
+        Welcome to Nikis Sweet Cake Shop.
+        We make delicious, fresh and beautiful cakes
+        for birthdays, anniversaries, weddings and parties.
+        Celebrate every moment with our special cakes!
+    </p>
+
+</section>
+
+
+<!-- CAKES SECTION -->
+
+<section class="cakes" id="cakes">
+
+    <h2>Our Delicious Cakes</h2>
+
+    <p class="subtitle">Choose Your Favourite Cake</p>
+
+
+    <!-- BIRTHDAY CAKES -->
+
+    <div class="category-section" id="birthday">
+
+        <h3>Birthday Cakes</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="Images/birthdaychocolate.jpg" alt="Chocolate Cake">
+                <h4>Chocolate Cake</h4>
+                <p>₹550</p>
+                <button onclick="orderCake('Chocolate Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/birthday strawberry.jpg" alt="Strawberry Cake">
+                <h4>Strawberry Cake</h4>
+                <p>₹600</p>
+                <button onclick="orderCake('Strawberry Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/vanilla.jpg" alt="Vanilla Cake">
+                <h4>Vanilla Cake</h4>
+                <p>₹500</p>
+                <button onclick="orderCake('Vanilla Cake')">Order Now</button>
+            </div>
+
+
+            <div class="card">
+                <img src="Images/angle.jpg" alt="Angel Cake">
+                <h4>Angel Cake</h4>
+                <p>₹940</p>
+                <button onclick="orderCake('Angel Cake')">Order Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ANNIVERSARY CAKES -->
+
+    <div class="category-section" id="anniversary">
+
+        <h3>❤️ Anniversary Cakes</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="Images/aniversary.jpg" alt="Heart Shape Cake">
+                <h4>Heart Shape Cake</h4>
+                <p>₹900</p>
+                <button onclick="orderCake('Heart Shape Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/rose.jpeg" alt="Rose Cake">
+                <h4>Rose Design Cake</h4>
+                <p>₹1000</p>
+                <button onclick="orderCake('Rose Design Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/redvelvet main.jpg" alt="Red Velvet Cake">
+                <h4>Red Velvet Cake</h4>
+                <p>₹850</p>
+                <button onclick="orderCake('Red Velvet Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/floral.jpg" alt="Floral Cake">
+                <h4>Floral Cake</h4>
+                <p>₹850</p>
+                <button onclick="orderCake('Floral Cake')">Order Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- WEDDING CAKES -->
+
+    <div class="category-section" id="wedding">
+
+        <h3>💍 Wedding Cakes</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="Images/royal.jpg" alt="Royal Wedding Cake">
+                <h4>Royal Wedding Cake</h4>
+                <p>₹2500</p>
+                <button onclick="orderCake('Royal Wedding Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/white.jpg" alt="White Cream Cake">
+                <h4>White Cream Cake</h4>
+                <p>₹2200</p>
+                <button onclick="orderCake('White Cream Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/love.jpg" alt="Love Wedding Cake">
+                <h4>Love Wedding Cake </h4>
+                <p>₹480</p>
+                <button onclick="orderCake('Love Wedding Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/couple.jpg" alt="Couple Wedding Cake">
+                <h4>Couple Wedding Cake</h4>
+                <p>₹1800</p>
+                <button onclick="orderCake('Couple Wedding Cake')">Order Now</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- RED VELVET CAKES -->
+
+    <div class="category-section" id="redVelvet">
+
+        <h3>Red Velvet Cakes</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="Images/ckasical.jpg" alt="Classic Velvet Cake">
+                <h4>Classic Red Velvet</h4>
+                <p>₹850</p>
+                <button onclick="orderCake('Classic Red Velvet')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/heart red.jpg" alt="Red Velvet Heart Cake">
+                <h4>Red Velvet Heart Cake</h4>
+                <p>₹1000</p>
+                <button onclick="orderCake('Red Velvet Heart Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/cream.jpg" alt="Cream Cake">
+                <h4>Cream Cake</h4>
+                <p>₹1000</p>
+                <button onclick="orderCake('Cream Cake')">Order Now</button>
+            </div>
+
+            <div class="card">
+                <img src="Images/primium.jpg" alt="primium Cake">
+                <h4>primium Cake</h4>
+                <p>₹1000</p>
+                <button onclick="orderCake('primium Cake')">Order Now</button>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ORDER FORM -->
+
+<section class="order-section" id="order">
+
+    <h2>Place Your Cake Order</h2>
+
+    <p>Fill Your Customer Information</p>
+
+    <form id="orderForm">
+
+        <label>Customer Name</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="10 digit mobile number" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label>Pickup Location</label>
+        <input type="text" id="pickupLocation" value="Nikis Sweet Cake Shop" readonly>
+
+        <label>Pickup Time</label>
+
+        <select id="pickupTime" required>
+            <option value="">Select Pickup Time</option>
+            <option>10:00 AM</option>
+            <option>12:00 PM</option>
+            <option>2:00 PM</option>
+            <option>4:00 PM</option>
+            <option>6:00 PM</option>
+        </select>
+
+        <label>Select Cake</label>
+
+        <select id="cakeName" required>
+            <option value="">-- Select Cake --</option>
+            <option>Chocolate Cake</option>
+            <option>Strawberry Cake</option>
+            <option>Vanilla Cake</option>
+            <option>Black Forest Cake</option>
+            <option>Ice Cake</option>
+            <option>Angel Cake</option>
+            <option>Heart Shape Cake</option>
+            <option>Rose Design Cake</option>
+            <option>Red Velvet Cake</option>
+            <option>Royal Wedding Cake</option>
+            <option>White Cream Cake</option>
+            <option>Rainbow Party Cake</option>
+            <option>Fruit Cake</option>
+            <option>Kids Cartoon Cake</option>
+            <option>Rainbow Kids Cake</option>
+            <option>Personalized Photo Cake</option>
+            <option>Special Photo Cake</option>
+            <option>Classic Red Velvet</option>
+            <option>Red Velvet Heart Cake</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" min="1" value="1" required>
+
+        <label>Pickup Date</label>
+        <input type="date" id="deliveryDate" required>
+
+        <label>Cake Message</label>
+        <textarea id="message" placeholder="Example: Happy Birthday Nikita"></textarea>
+
+        <h3>Payment Method</h3>
+
+        <label class="payment-option">
+            <input type="radio" name="payment" value="Debit Card" required>
+            Debit Card
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment" value="Credit Card">
+            Credit Card
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment" value="UPI">
+            UPI
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment" value="Cash on Pickup">
+            Cash on Pickup
+        </label>
+
+        <p class="payment-note">
+            Demo Website: No real payment is processed.
+            Never enter actual card numbers, CVV or PIN.
+        </p>
+
+        <button type="submit" class="submit-btn">
+            Submit Order
+        </button>
+
+    </form>
+
+    <div id="orderResult"></div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+    <h3>Nikis Sweet Cake Shop</h3>
+
+    <p>Contact: 9031300837</p>
+
+    <p>Email: nikiscakes@gmail.com</p>
+
+    <p class="copyright">
+        © 2026 Nikis Sweet Cake Shop. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
